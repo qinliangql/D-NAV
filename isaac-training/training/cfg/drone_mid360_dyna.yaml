@@ -1,0 +1,12 @@
+drone:  
+  model_name: "hummingbird"
+
+sensor:
+  lidar_range: 10.
+  # lidar_vfov: [-7, 52.] # degree
+  lidar_vfov: [-10, 40.] # degree for raycast lidar
+  lidar_vbeams: 25 # number of vertical beams 29
+  lidar_hres: 2. # degree 2
+  lidar_h_bins: 36
+  lidar_v_bins: 6
+  lidar_fps_num: 300
