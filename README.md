@@ -151,6 +151,17 @@ pip install spconv-cu121
 > The CUDA version used here must match the CUDA version required by the installed PyTorch build, rather than the system CUDA version.
 
 
+Due to multi uavs collision detection, we need to revise:
+
+isaac-training/third_party/OmniDrones/omni_drones/robots/robot.py
+
+```
+kit_utils.set_nested_collision_properties(
+    prim_path,
+    collision_enabled=False,
+)
+```
+
 # Verify Installation
 
 Run a simple training example to verify the installation:
